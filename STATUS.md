@@ -6,17 +6,18 @@
 - The React/Vite app has a local prototype path and source for optional Supabase-backed flows. Current fork deployment, applied migrations, and live provider configuration have not been verified.
 - `npm test` verifies one existing party-reward rule; `npm run build` succeeds locally. CI is defined in `.github/workflows/frontend-checks.yml`, but a GitHub run has not yet been observed for this fork.
 - Root `index.html` is a committed generated artifact and is not refreshed by normal source changes.
+- Onboarding and modular-boundary documentation are committed locally on `guild-onboarding-modular-boundaries` at `58e8963`; the fork branch has not been pushed or reviewed in a GitHub PR.
 
 ## Known gaps / blockers
 
-- Root onboarding and module-boundary documentation require review before a PR or merge. No cross-product runtime integration, true white-label configuration publication, or tenant-isolation proof exists in this repo yet.
+- Root onboarding and module-boundary documentation require GitHub review before a merge. No cross-product runtime integration, true white-label configuration publication, or tenant-isolation proof exists in this repo yet.
 - `CLAUDE.md` contains dated live-test claims that are not current deployment attestation. `server/README.md` describes manual setup; source migrations extend through `0010`, but applied state is unknown.
 - The marketplace-neutral core and Guild-specific modules are not separated in executable code. Chapter membership must not be treated as the future customer tenant boundary.
 - No automated negative tenant-isolation or module-disable tests exist. Provider secrets and production settings are outside this checkout's autonomous scope.
 
 ## Exact next action
 
-Review the onboarding diff, then define and test one tenant-scoped marketplace contract with synthetic tenants in an isolated implementation slice. Do not connect existing Supabase data or production providers before that boundary passes negative tests.
+Push the local onboarding branch for GitHub review when authorized, then define and test one tenant-scoped marketplace contract with synthetic tenants in an isolated implementation slice. Do not connect existing Supabase data or production providers before that boundary passes negative tests.
 
 ## Decision log
 
