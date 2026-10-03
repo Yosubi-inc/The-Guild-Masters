@@ -22,6 +22,19 @@ Guild Masters should own the optional quest presentation and progression rules, 
 
 These names are proposed boundaries, not installed packages. Disabling a module must prevent new UI, API and worker actions, while preserving records for governed export/retention. Uninstalling a module does not authorize deleting its data. Dependency validation must prevent activating an orphaned dependent module. A brand or module publication must be versioned and reversible without a customer fork.
 
+The Agent Platform registry still marks `mod.gamification` as planned and
+unowned under decision D-44. None of the Guild candidate names above registers
+or activates that platform module. Decide ownership and the mapping to Guild
+capabilities before submitting any registry change; a passing Guild prototype
+alone does not resolve D-44.
+
+For the first executable slice, keep rules in a framework- and database-free
+service, put tenant- and owner-scoped persistence behind a repository, inject
+limits as policy, and emit identifier-only events to subscribers outside the
+module. Verify behavior with unit fakes, HTTP tests, and opt-in real-database
+isolation tests. This is an acceptance pattern for new work, not a claim that
+the current Guild code or database already has these boundaries.
+
 ## Integration rule
 
 Cross-product communication should use versioned, authenticated, tenant-qualified commands/events with idempotency keys and explicit actor authority. Guild Masters must not write directly to another Yosubi product's tables or reuse its service-role key. The first proof should be a synthetic interaction only; no live identity or payment account is implicitly shared.
