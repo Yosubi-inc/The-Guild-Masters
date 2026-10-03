@@ -27,6 +27,7 @@ import { PostContractPaymentField } from "./components/PostContractPaymentField.
 import { useSupabaseAuth } from "./auth/SupabaseAuthContext.jsx";
 import { supabase } from "./supabaseClient.js";
 import { generateNickname } from "./nickname.js";
+import { questCompletionRewards } from "./questCompletionRewards.js";
   function App() {
     let supabaseAuth = useSupabaseAuth(),
       // Real quests/petitions/disputes flow through the backend built this
@@ -716,16 +717,10 @@ import { generateNickname } from "./nickname.js";
         // no separate persisted account for the NPC roster members here.
         let partySize = 1 + (player.party ? player.party.members.length : 0),
           assisted = partySize > 1 && !!(player.partyAssisted || {})[s.id],
-          myXp = assisted ? Math.ceil(XP_PER_RANK[s.rank] / partySize) : XP_PER_RANK[s.rank],
-          myScrip = assisted ? Math.ceil(s.scrip / partySize) : s.scrip,
-          statKeys = Object.keys(s.stats),
-          totalPts = Object.values(s.stats).reduce((a, b) => a + b, 0),
-          myPts = assisted ? Math.ceil(totalPts / partySize) : totalPts,
-          myStatGain = {};
-        for (let i = 0; i < myPts; i++) {
-          let k = statKeys[i % statKeys.length];
-          myStatGain[k] = (myStatGain[k] || 0) + 1;
-        }
+          { xp: myXp, scrip: myScrip, statGain: myStatGain } = questCompletionRewards(s, {
+            assisted,
+            partySize,
+          });
         (setPlayer((N) => {
           let U = {
             ...N.stats,
