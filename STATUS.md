@@ -6,7 +6,7 @@
 - The React/Vite app has a local prototype path and source for optional Supabase-backed flows. Current fork deployment, applied migrations, and live provider configuration have not been verified.
 - `npm test` verifies one existing party-reward rule; `npm run build` succeeds locally. CI is defined in `.github/workflows/frontend-checks.yml`, but a GitHub run has not yet been observed for this fork.
 - Root `index.html` is a committed generated artifact and is not refreshed by normal source changes.
-- Onboarding and modular-boundary documentation are committed locally on `guild-onboarding-modular-boundaries` at `58e8963`; the fork branch has not been pushed or reviewed in a GitHub PR.
+- Onboarding and modular-boundary documentation are proposed in [Guild Masters PR #1](https://github.com/Yosubi-inc/The-Guild-Masters/pull/1); frontend CI passed on the pushed branch. The PR is open and unmerged.
 
 ## Known gaps / blockers
 
@@ -17,7 +17,7 @@
 
 ## Exact next action
 
-Push the local onboarding branch for GitHub review when authorized, then define and test one tenant-scoped marketplace contract with synthetic tenants in an isolated implementation slice. Do not connect existing Supabase data or production providers before that boundary passes negative tests.
+Review PR #1 and verify deployment/migration state before any merge or production action; then define and test one tenant-scoped marketplace contract with synthetic tenants in an isolated implementation slice. Do not connect existing Supabase data or production providers before that boundary passes negative tests.
 
 ## Decision log
 
