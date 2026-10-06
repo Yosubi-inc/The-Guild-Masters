@@ -1,5 +1,7 @@
 # Backend setup
 
+> Source/setup guide, not evidence of a live deployment. This Yosubi fork's applied migration state, Stripe configuration and endpoint are unverified. The migration list below reflects files present in this repository; apply changes only through a separately approved environment-specific procedure.
+
 Real backend for The Guild Masters: Supabase (Postgres + Auth + Storage) +
 Stripe Connect for payouts. Everything in this folder is code — the steps
 below are the manual, one-time setup that only a human can do (creating
@@ -27,11 +29,10 @@ frontend falls back to its original fully-local behavior untouched.
 
 Easiest path (no CLI needed): open the Supabase Dashboard's **SQL Editor**
 and run, in order:
-1. `supabase/migrations/0001_init_schema.sql`
-2. `supabase/migrations/0002_functions_rls.sql`
-3. `supabase/migrations/0003_storage.sql`
-4. `supabase/migrations/0004_admin_venue_crud.sql`
-5. `supabase/seed.sql` (creates the single launch chapter)
+The repository contains numbered migrations `0001` through `0010` in
+`supabase/migrations/`. Review their ordering, dependencies and target
+environment before any application; this document does not attest which ones
+have already run. `supabase/seed.sql` is separate seed data, not a migration.
 
 (Or, with the Supabase CLI installed: `supabase link --project-ref <ref>`
 then `supabase db push`.)
@@ -73,7 +74,7 @@ From then on, use the Admin Console (Settings -> "Open Admin Console") or
 ```sh
 supabase functions deploy stripe-connect-onboarding
 supabase functions deploy stripe-webhook
-supabase secrets set STRIPE_SECRET_KEY=sk_test_... STRIPE_WEBHOOK_SECRET=whsec_... APP_URL=https://madcowg.github.io/The-Guild-Masters
+# Configure STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET and APP_URL only in the approved target environment.
 ```
 
 `SUPABASE_URL`/`SUPABASE_ANON_KEY`/`SUPABASE_SERVICE_ROLE_KEY` are injected
@@ -87,7 +88,10 @@ cp app/.env.example app/.env.local
 # fill in VITE_SUPABASE_URL / VITE_SUPABASE_ANON_KEY
 ```
 
-## What's still prototype-only after this
+## Historical prototype-only snapshot
+
+This section predates later implementation described in `CLAUDE.md`. Verify the
+current source and target environment before treating any item as outstanding.
 
 - The existing quest/board/party gameplay (`app/src/App.jsx`'s `player`
   state) still runs entirely on `localStorage` — it has not been migrated
