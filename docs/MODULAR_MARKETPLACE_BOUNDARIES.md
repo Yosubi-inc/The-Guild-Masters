@@ -1,6 +1,6 @@
 # Guild Masters modular marketplace boundaries
 
-Status: target contract, not implemented runtime. The [Yosubi Master](https://app.notion.com/p/3dd1dd2179118072a96ce7fa72ab4a0e) governs cross-product direction; `CLAUDE.md` governs established Guild behavior.
+Status: target contract, not implemented runtime. The the Yosubi Master (repository copy `docs/product-platform/YOSUBI_MASTER.md` in `yosubi-agent-platform`; the Notion page is only an index) governs cross-product direction; `CLAUDE.md` governs established Guild behavior.
 
 ## Ownership
 

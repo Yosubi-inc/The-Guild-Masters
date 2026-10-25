@@ -14,6 +14,6 @@ Without `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`, the frontend uses its 
 - `STATUS.md`: current evidence, gaps, next action, and decisions.
 - `CLAUDE.md`: established Guild game rules, visual language, and dated development history. Read its current-state note before relying on old deployment claims.
 - `docs/MODULAR_MARKETPLACE_BOUNDARIES.md`: this product's current-to-target modular boundaries.
-- [Yosubi Master](https://app.notion.com/p/3dd1dd2179118072a96ce7fa72ab4a0e): cross-product direction. This repo remains authoritative for its own existing behavior.
+- the Yosubi Master (repository copy `docs/product-platform/YOSUBI_MASTER.md` in `yosubi-agent-platform`; the Notion page is only an index): cross-product direction. This repo remains authoritative for its own existing behavior.
 
 The target is a tenant-isolated, white-label marketplace composition, not a customer-specific fork. Guild-specific quests, progression, Tavern, and flavor capabilities should become optional modules over a neutral marketplace core. This is a target architecture, not a claim that tenant isolation or module installation is implemented here today.
