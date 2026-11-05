@@ -1,6 +1,6 @@
 # The Guild Masters — Project Handoff
 
-> Current-state note (2026-10-03): This file contains dated development history. The early prototype-only description below predates the later Supabase/Stripe source work in this same file. Neither historical live-test notes nor the presence of backend code attest to the current deployment of the Yosubi fork. Use `STATUS.md` for present evidence and `CONTEXT.md` for execution boundaries; preserve the game rules and visual decisions below.
+> Current-state note (2026-10-03): The dated development history now lives in `docs/HANDOFF_HISTORY.md` (moved 2026-11-05). The early prototype-only description below predates the later Supabase/Stripe source work recorded in that history file. Neither historical live-test notes nor the presence of backend code attest to the current deployment of the Yosubi fork. Use `STATUS.md` for present evidence and `CONTEXT.md` for execution boundaries; preserve the game rules and visual decisions below.
 
 Companion app to **The Tavern**, a physical space. Gamifies everyday tasks and
 services (odd jobs, professional services, social outings) as an MMORPG/isekai
