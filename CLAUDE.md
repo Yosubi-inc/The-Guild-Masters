@@ -122,3 +122,5 @@ Mythril (40+) → Legendary (80+).
 ## Older sections
 
 The feature inventory, product roadmap, "Done since the original handoff" and "Beta to launch technical requirements" sections moved to `docs/HANDOFF_HISTORY.md` (unchanged). Read that file only when the task needs them.
+
+Compatibility pointer: migrations and older notes cite "CLAUDE.md Tier 1" to "Tier 5", "Beta to launch technical requirements" and the product roadmap. Those sections now live in `docs/HANDOFF_HISTORY.md` under the same names.

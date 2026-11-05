@@ -90,7 +90,7 @@ cp app/.env.example app/.env.local
 
 ## Historical prototype-only snapshot
 
-This section predates later implementation described in `CLAUDE.md`. Verify the
+This section predates later implementation described in `CLAUDE.md` and `docs/HANDOFF_HISTORY.md`. Verify the
 current source and target environment before treating any item as outstanding.
 
 - The existing quest/board/party gameplay (`app/src/App.jsx`'s `player`
@@ -100,7 +100,7 @@ current source and target environment before treating any item as outstanding.
   Admin Console (venues, roles, ID verification).
 - ID verification is manual review only (file upload + admin approve/
   reject) — no third-party verification vendor integrated (deferred, see
-  CLAUDE.md Tier 1).
+  docs/HANDOFF_HISTORY.md Tier 1).
 - Payments: Stripe Connect account creation/onboarding is wired, but
   there's no checkout/escrow flow yet tying a quest's payout to an actual
   charge — that's the next piece once the quest data model itself moves
