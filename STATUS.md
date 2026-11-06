@@ -1,5 +1,7 @@
 # Guild Masters status
 
+Active and history documents: [`docs/PLAN.md`](docs/PLAN.md), [`docs/ACTIONS.md`](docs/ACTIONS.md), [`docs/archive/PLAN.md`](docs/archive/PLAN.md), [`docs/archive/ACTIONS.md`](docs/archive/ACTIONS.md).
+
 ## Current status
 
 - Yosubi-owned fork checked out locally at `C:\Users\gabri\projects\The-Guild-Masters`; control-plane project `the-guild-masters` is registered and production-sensitive.
@@ -11,7 +13,7 @@
 ## Known gaps / blockers
 
 - Root onboarding and module-boundary documentation require GitHub review before a merge. No cross-product runtime integration, true white-label configuration publication, or tenant-isolation proof exists in this repo yet.
-- `docs/HANDOFF_HISTORY.md` (moved out of `CLAUDE.md`) contains dated live-test claims that are not current deployment attestation. `server/README.md` describes manual setup; source migrations extend through `0010`, but applied state is unknown.
+- `docs/archive/ACTIONS.md` (moved out of `CLAUDE.md`) contains dated live-test claims that are not current deployment attestation. `server/README.md` describes manual setup; source migrations extend through `0010`, but applied state is unknown.
 - The marketplace-neutral core and Guild-specific modules are not separated in executable code. Chapter membership must not be treated as the future customer tenant boundary.
 - Agent Platform `mod.gamification` remains planned and unowned under D-44; no Guild module may be registered as that platform module until ownership and mapping are decided.
 - No automated negative tenant-isolation or module-disable tests exist. Provider secrets and production settings are outside this checkout's autonomous scope.

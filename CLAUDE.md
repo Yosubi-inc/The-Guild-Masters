@@ -1,6 +1,6 @@
 # The Guild Masters — Project Handoff
 
-> Current-state note (2026-10-03): The dated development history now lives in `docs/HANDOFF_HISTORY.md` (moved 2026-11-05). The early prototype-only description below predates the later Supabase/Stripe source work recorded in that history file. Neither historical live-test notes nor the presence of backend code attest to the current deployment of the Yosubi fork. Use `STATUS.md` for present evidence and `CONTEXT.md` for execution boundaries; preserve the game rules and visual decisions below.
+> Current-state note (2026-10-03): The dated development history now lives in `docs/archive/ACTIONS.md` (moved 2026-11-05). The early prototype-only description below predates the later Supabase/Stripe source work recorded in that history file. Neither historical live-test notes nor the presence of backend code attest to the current deployment of the Yosubi fork. Use `STATUS.md` for present evidence and `CONTEXT.md` for execution boundaries; preserve the game rules and visual decisions below.
 
 Companion app to **The Tavern**, a physical space. Gamifies everyday tasks and
 services (odd jobs, professional services, social outings) as an MMORPG/isekai
@@ -121,6 +121,6 @@ Mythril (40+) → Legendary (80+).
 
 ## Older sections
 
-The feature inventory, product roadmap, "Done since the original handoff" and "Beta to launch technical requirements" sections moved to `docs/HANDOFF_HISTORY.md` (unchanged). Read that file only when the task needs them.
+The feature inventory, product roadmap, "Done since the original handoff" and "Beta to launch technical requirements" sections moved to `docs/archive/ACTIONS.md` (unchanged). Read that file only when the task needs them.
 
-Compatibility pointer: migrations and older notes cite "CLAUDE.md Tier 1" to "Tier 5", "Beta to launch technical requirements" and the product roadmap. Those sections now live in `docs/HANDOFF_HISTORY.md` under the same names.
+Compatibility pointer: migrations and older notes cite "CLAUDE.md Tier 1" to "Tier 5", "Beta to launch technical requirements" and the product roadmap. Those sections now live in `docs/archive/ACTIONS.md` under the same names.

@@ -1,3 +1,9 @@
+# ACTIONS history
+
+Finished actions and old handoffs, moved word for word from `ACTIONS.md` by the weekly sweep, newest first under dated headings. Plain Markdown so `grep` finds anything.
+
+## 2026-11-05 HANDOFF_HISTORY
+
 # The Guild Masters — Project Handoff: older sections
 
 Moved out of `CLAUDE.md` on 2026-11-05 so the file loaded at every session start stays short. Content is unchanged. Read it when you need the feature inventory, roadmap, change history or launch requirements.
