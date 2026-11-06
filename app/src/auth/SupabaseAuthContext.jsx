@@ -13,7 +13,7 @@ export function useSupabaseAuth() {
 // (VITE_SUPABASE_URL/ANON_KEY unset), this steps aside entirely and
 // renders children directly — the existing prototype's own mock landing
 // flow (email/phone/OTP/ID stub) keeps working exactly as before. See
-// docs/HANDOFF_HISTORY.md "Beta -> launch technical requirements" for why both exist
+// docs/archive/ACTIONS.md "Beta -> launch technical requirements" for why both exist
 // side by side during this migration.
 export function SupabaseAuthGate({ children }) {
   let [session, setSession] = useState(null),

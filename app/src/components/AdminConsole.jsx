@@ -4,7 +4,7 @@ import { supabase } from "../supabaseClient.js";
 // Real backend-backed admin control panel — separate from the existing
 // prototype Steward's Ledger (which still runs on local/simulated game
 // data). Gated on profiles.is_admin, a rank-independent flag set only via
-// the admin_set_role RPC (never self-service). See docs/HANDOFF_HISTORY.md "Beta ->
+// the admin_set_role RPC (never self-service). See docs/archive/ACTIONS.md "Beta ->
 // launch technical requirements", Tier 1 #2.
 export function AdminConsole({ profile, onBack }) {
   let [chapter, setChapter] = useState(null),
