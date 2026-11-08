@@ -1,5 +1,7 @@
 # Guild Masters status
 
+Plan and session state: tracked in the agentctl database of `yosubi-agent-platform` (`agentctl plan resume-context <planId>`); the former `docs/PLAN.md` and `docs/ACTIONS.md` files are retired (Phase 6, 2026-11-06).
+
 ## Current status
 
 - Yosubi-owned fork checked out locally at `C:\Users\gabri\projects\The-Guild-Masters`; control-plane project `the-guild-masters` is registered and production-sensitive.
