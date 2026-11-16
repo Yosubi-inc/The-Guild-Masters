@@ -1,6 +1,6 @@
-# Guild Masters status
+# Guild Masters status (archived)
 
-Plan and session state: tracked in the agentctl database of `yosubi-agent-platform` (`agentctl plan resume-context <planId>`); the former `docs/PLAN.md` and `docs/ACTIONS.md` files are retired (Phase 6, 2026-11-06).
+Archived 2026-11-16: this was the root status file, retired by the owner's decision (2026-11-06/15). It is kept as history and is no longer updated. Plan and session state: tracked in the agentctl database of `yosubi-agent-platform` (`agentctl plan resume-context <planId>`); the former `docs/PLAN.md` and `docs/ACTIONS.md` files are retired (Phase 6, 2026-11-06).
 
 ## Current status
 
