@@ -11,7 +11,7 @@ Without `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`, the frontend uses its 
 ## Source of truth
 
 - `CONTEXT.md`: repository identity, checks, and execution boundaries.
-- `STATUS.md`: current evidence, gaps, next action, and decisions.
+- Session and plan state: the `yosubi-agent-platform` agentctl database (`agentctl plan resume-context <planId>`); the former status file is archived at `docs/archive/STATUS-archive.md`.
 - `CLAUDE.md`: established Guild game rules and visual language. `docs/HANDOFF_HISTORY.md`: dated development history. Read the current-state note in `CLAUDE.md` before relying on old deployment claims.
 - `docs/MODULAR_MARKETPLACE_BOUNDARIES.md`: this product's current-to-target modular boundaries.
 - the Yosubi Master (repository copy `docs/product-platform/YOSUBI_MASTER.md` in `yosubi-agent-platform`; the Notion page is only an index): cross-product direction. This repo remains authoritative for its own existing behavior.
