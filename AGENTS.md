@@ -1,6 +1,6 @@
 # Guild Masters agent instructions
 
-Read root `todo.md` if it exists, then `CONTEXT.md` and `docs/MODULAR_MARKETPLACE_BOUNDARIES.md` before changing this repository. Session and plan state live in the `yosubi-agent-platform` agentctl database (`agentctl plan resume-context <planId>`). Read `CLAUDE.md` for game rules and visual decisions; its historical deployment claims are not current attestation.
+Read `CONTEXT.md` and `docs/MODULAR_MARKETPLACE_BOUNDARIES.md` before changing this repository. Session and plan state live in the `yosubi-agent-platform` agentctl database (`agentctl plan resume-context <planId>`). Read `CLAUDE.md` for game rules and visual decisions (deployment caveat: `CONTEXT.md`).
 
 Keep Guild Masters' work in this repository and its own worktree. Preserve existing changes. Use the registered `the-guild-masters` control-plane project for nontrivial work; one writer per worktree. A task's approval is specific to its outcome, not blanket authorization for later tasks.
 

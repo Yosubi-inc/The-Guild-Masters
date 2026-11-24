@@ -1,6 +1,6 @@
-# The Guild Masters — Project Handoff
+# The Guild Masters
 
-> Current-state note (2026-10-03): The dated development history now lives in `docs/HANDOFF_HISTORY.md` (moved 2026-11-05). The early prototype-only description below predates the later Supabase/Stripe source work recorded in that history file. Neither historical live-test notes nor the presence of backend code attest to the current deployment of the Yosubi fork. Session and plan state live in the agentctl database (`agentctl plan resume-context <planId>`); use `CONTEXT.md` for execution boundaries; preserve the game rules and visual decisions below.
+> Current-state note (2026-10-03): The dated development history now lives in `docs/HANDOFF_HISTORY.md` (moved 2026-11-05). The early prototype-only description below predates the later Supabase/Stripe source work recorded in that history file. Deployment state is stated once, in `CONTEXT.md`. Session and plan state live in the agentctl database (`agentctl plan resume-context <planId>`); use `CONTEXT.md` for execution boundaries; preserve the game rules and visual decisions below.
 
 Companion app to **The Tavern**, a physical space. Gamifies everyday tasks and
 services (odd jobs, professional services, social outings) as an MMORPG/isekai
@@ -14,7 +14,7 @@ The editable source lives in `app/` — a Vite + React project (`app/src/App.jsx
 produces `app/dist/index.html` as a **fully self-contained, single-file**
 bundle (via `vite-plugin-singlefile`); that output gets copied over the
 repo-root `index.html`, which the upstream GitHub Pages setup historically deployed at
-`https://madcowg.github.io/The-Guild-Masters/`. The Yosubi fork's active hosting is unverified. `app/node_modules/` and
+`https://madcowg.github.io/The-Guild-Masters/`. `app/node_modules/` and
 `app/dist/` are gitignored — only source is tracked. There is still no CI/build
 step on the deploy side: rebuild locally and commit the updated root
 `index.html` alongside any `app/src` changes.
